@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Exercise", "Accenture entry exercises\1. Exercise.csproj", "{0E36F7D0-24D8-4C4D-8B90-347FA0F6E4DA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Exercise", "2. Exercise\2. Exercise.csproj", "{3C19DE24-273A-42A8-8C4C-DB56ED8DEC65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Exercise", "1. Exercise\1. Exercise.csproj", "{0E36F7D0-24D8-4C4D-8B90-347FA0F6E4DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0E36F7D0-24D8-4C4D-8B90-347FA0F6E4DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E36F7D0-24D8-4C4D-8B90-347FA0F6E4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E36F7D0-24D8-4C4D-8B90-347FA0F6E4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0E36F7D0-24D8-4C4D-8B90-347FA0F6E4DA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3C19DE24-273A-42A8-8C4C-DB56ED8DEC65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3C19DE24-273A-42A8-8C4C-DB56ED8DEC65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C19DE24-273A-42A8-8C4C-DB56ED8DEC65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C19DE24-273A-42A8-8C4C-DB56ED8DEC65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E36F7D0-24D8-4C4D-8B90-347FA0F6E4DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E36F7D0-24D8-4C4D-8B90-347FA0F6E4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E36F7D0-24D8-4C4D-8B90-347FA0F6E4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E36F7D0-24D8-4C4D-8B90-347FA0F6E4DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
