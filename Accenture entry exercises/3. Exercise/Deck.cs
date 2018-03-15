@@ -6,15 +6,10 @@ using System.Threading.Tasks;
 
 namespace _3.Exercise
 {
-	class Program
+	class Deck
 	{
-		static void Main(string[] args)
+		public Deck()
 		{
-			Card c = new Card(0,0);
-			Card c2 = new Card(4, 13);
-
-			Console.WriteLine(c2.name);
-			Console.Read();
 
 		}
 	}
