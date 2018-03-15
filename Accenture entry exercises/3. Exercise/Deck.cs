@@ -19,7 +19,7 @@ namespace _3.Exercise
 		public Deck(int number)
 		{
 
-			if (number < 53)
+			if (number < 53 && number > 0)
 			{
 				cards = new Card[number];
 
@@ -72,7 +72,7 @@ namespace _3.Exercise
 
 		}
 
-		public void Swap(int a, int b)
+		private void Swap(int a, int b)
 		{
 			Card temp = cards[a];
 			cards[a] = cards[b];
@@ -81,29 +81,42 @@ namespace _3.Exercise
 
 		public void Draw()
 		{
-			drawnCard = cards[0].cardName;
+			int number = cards.GetLength(0);
 
-			switch (cards[0].color)
+			if (number > 0)
 			{
-				case "Clubs":
-					clubs--;
-					break;
-				case "Diamonds":
-					diamonds--;
-					break;
-				case "Hearts":
-					hearts--;
-					break;
-				case "Spades":
-					spades--;
-					break;
+				drawnCard = cards[0].cardName;
+
+				switch (cards[0].color)
+				{
+					case "Clubs":
+						clubs--;
+						break;
+					case "Diamonds":
+						diamonds--;
+						break;
+					case "Hearts":
+						hearts--;
+						break;
+					case "Spades":
+						spades--;
+						break;
+				}
+
+				var cardList = new List<Card>(cards);
+				cardList.RemoveAt(0);
+				cards = cardList.ToArray();
+
+				deckName = number - 1 + " cards - " + clubs + " Clubs, " + diamonds + " Diamonds, " + hearts + " Hearts, " + spades + " Spades";
 			}
 
-			var cardList = new List<Card>(cards);
-			cardList.RemoveAt(0);
-			cards = cardList.ToArray();
+			else
+			{
 
-			deckName = cards.GetLength(0) + " cards - " + clubs + " Clubs, " + diamonds + " Diamonds, " + hearts + " Hearts, " + spades + " Spades";
+				deckName = "Empty Deck";
+
+			}
+
 
 		}
 	}
