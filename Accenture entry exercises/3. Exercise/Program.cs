@@ -10,10 +10,9 @@ namespace _3.Exercise
 	{
 		static void Main(string[] args)
 		{
-			Deck d = new Deck(1);
+			Deck d = new Deck(12);
 			Console.WriteLine(d.deckName);
 			d.Shuffle();
-			d.Draw();
 			d.Draw();
 			Console.WriteLine(d.drawnCard);
 			Console.WriteLine(d.deckName);
