@@ -8,9 +8,9 @@ namespace _3.Exercise
 {
 	public class Card
 	{
-		string color;
-		string value;
-		public string name;
+		public string color;
+		public string value;
+		public string cardName;
 
 		string[] colors = {"Clubs", "Diamonds", "Hearts", "Spades"};
 		string[] values = { "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King" };
@@ -21,11 +21,11 @@ namespace _3.Exercise
 			{
 				color = colors[c];
 				value = values[v];
-				name = color + " " + value;
+				cardName = value + " " + color;
 			}
 			else
 			{
-				name = "Invalid Card";
+				cardName = "Invalid Card";
 			}
 
 		}

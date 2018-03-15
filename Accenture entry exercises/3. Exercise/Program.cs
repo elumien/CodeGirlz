@@ -10,10 +10,12 @@ namespace _3.Exercise
 	{
 		static void Main(string[] args)
 		{
-			Card c = new Card(0,0);
-			Card c2 = new Card(4, 13);
-
-			Console.WriteLine(c2.name);
+			Deck d = new Deck(12);
+			Console.WriteLine(d.deckName);
+			d.Shuffle();
+			d.Draw();
+			Console.WriteLine(d.drawnCard);
+			Console.WriteLine(d.deckName);
 			Console.Read();
 
 		}
